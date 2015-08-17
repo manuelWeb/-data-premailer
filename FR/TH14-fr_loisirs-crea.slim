@@ -1,0 +1,118 @@
+== Slim::Template.new('FR/var.slim').render
+doctype transitional
+html[xmlns="http://www.w3.org/1999/xhtml"]
+  head
+    title == ($title)
+    meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
+
+    <style data-premailer="ignore" type="text/css">.ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;} .ExternalClass {width: 100%;}</style>
+    css:
+      html body {width: 100%; margin: 0; line-height: 121%; background-color: #FFFFFF;}
+      html img {font-family: Arial, sans-serif; font-size: 16px;}
+      td img {display: block;}
+      .s-edito {padding-left: 10px;}
+      .s-edito p {font-family: Arial, Helvetica, sans-serif; font-size: 0; font-style: italic; color: #333333; padding:0; margin-bottom:0; margin: 0;}
+      .s-edito a {text-decoration: none; color: #333333; font-size: 18px; line-height: 138%; }
+      .w100 {width: 100%;}
+      .bg-color {background-color: #F6EDDD;}
+      .teaserText, .selBtn, .logo, .etc {font-family: Arial, sans-serif; font-weight: bold; font-size: 30px; text-align: center; line-height: 100%;}
+      .logo, .etc {text-align: left; color: #E2144D;}
+      .teaserText, .selBtn {font-family: verdana, sans-serif; font-size: 38px; font-style: italic; font-weight: bold; color: #D00052;}
+      .txtcenter {text-align: center;}
+      .lh-100 {line-height: 100%;}
+      .lh-130 {line-height: 130%;}
+      .lh-150 {line-height: 150%;}
+      .m0auto {margin: 0 auto;}
+      .m0 {margin: 0;} .p0 {padding: 0;}
+
+  body[bgcolor="#ffffff"]
+    table.m0auto.w100[align="center" border="0" cellpadding="0" cellspacing="0" width="640"]
+      /! header
+      == Slim::Template.new('FR/_header.slim').render
+      tr
+        td.m0auto[ align="center"]
+          img[src="images/top-shadow.png" width="640" height="10" border="0" alt=""]
+      /! content
+      tr
+        td
+          table.m0auto[border="0" cellpadding="0" cellspacing="0" width="640" align="center"]
+            tr
+              td valign="top"
+                img[src="images/left-shadow.png" width="10" height="1290" border="0" alt=""]
+              td
+                table[border="0" cellpadding="0" cellspacing="0" width="620"]
+                  tr
+                    td
+                      table[border="0" cellpadding="0" cellspacing="0" width="620"]
+                        tr
+                          td
+                            table[border="0" cellpadding="0" cellspacing="0" width="230"]
+                              tr
+                                td
+                                  a href==($s1_c1_r1) target="_blank"
+                                    img.logo[src="images/s1_c1_r1.png" width="230" height="88" border="0" alt==($alt_s1_c1_r1)]
+                              tr
+                                td
+                                  a href==($s1_c1_r2) target="_blank"
+                                    img[src="images/s1_c1_r2.jpg" width="230" height="182" border="0" alt==($alt_s1_c1_r2)]
+                          td
+                            table[border="0" cellpadding="0" cellspacing="0" width="390"]
+                              tr
+                                td
+                                  a href==($s1_c2_r1) target="_blank"
+                                    img.teaserText[src="images/s1_c2_r1.png" width="390" height="126" border="0" alt==($alt_s1_c2_r1)]
+                              tr
+                                td.s-edito valign="middle" align="left" width="390" height="114"
+                                  / img[src="images/s1_c2_r2.png" width="390" height="114" border="0" alt=""] / .m0.p0
+                                  p.test
+                                    a href==($s1_c2_r2) target="_blank" == $edito
+                              tr
+                                td
+                                  table[border="0" cellpadding="0" cellspacing="0" width="390"]
+                                    tr
+                                      td
+                                        a href==($s1_c2_1_r3) target="_blank"
+                                          img[src="images/s1_c2-1_r3.png" width="237" height="30" border="0" alt==($alt_s1_c2_1_r3) style="text-indent: 10px;"]
+                                      td
+                                        a href==($s1_c2_2_r3) target="_blank"
+                                          img[src="images/s1_c2-2_r3.png" width="153" height="30" border="0" alt==($alt_s1_c2_2_r3)]
+                  tr
+                    td
+                      a href==($s2) target="_blank"
+                        img[src="images/s2.png" width="620" height="30" border="0" alt==($alt_s2)]
+                  tr
+                    td
+                      table[border="0" cellpadding="0" cellspacing="0" width="620"]
+                        tr
+                          td
+                            a href==($s3_c1) target="_blank"
+                              img[src="images/s3_c1.jpg" width="310" height="350" border="0" alt==($alt_s3_c1)]
+                          td
+                            a href==($s3_c2) target="_blank"
+                              img[src="images/s3_c2.jpg" width="310" height="350" border="0" alt==($alt_s3_c2)]
+                  tr
+                    td
+                      table[border="0" cellpadding="0" cellspacing="0" width="620"]
+                        tr
+                          td
+                            a href==($s4_c1) target="_blank"
+                              img[src="images/s4_c1.jpg" width="310" height="350" border="0" alt==($alt_s4_c1)]
+                          td
+                            a href==($s4_c2) target="_blank"
+                              img[src="images/s4_c2.jpg" width="310" height="350" border="0" alt==($alt_s4_c2)]
+                  tr
+                    td
+                      a href==($s5) target="_blank"
+                        img.selBtn[src="images/s5.png" width="620" height="98" border="0" alt==($alt_s5)]
+                  tr
+                    td bgcolor="#FFFFFF" style="padding-bottom: 12px;"
+                      img[src="images/s6.png" width="620" height="5" border="0" alt=""]
+                  /! end content
+
+                  /! footer
+                  == Slim::Template.new('FR/_footer.slim').render
+                  
+                  /! mentions
+                  == Slim::Template.new('FR/_mentions.slim').render                  
+              td valign="top"
+                img[src="images/right-shadow.png" width="10" height="1290" border="0" alt=""]
